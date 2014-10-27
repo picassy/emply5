@@ -37,6 +37,7 @@
                 <row>bottom-d</row>
                 <row>main-top</row>
                 <row>main-bottom</row>
+                <row>main-bottom-b</row>
                 <row>sidebar-a</row>
                 <row>sidebar-b</row>
             </rows>
@@ -89,6 +90,7 @@
                     <row>bottom-d</row>
                     <row>main-top</row>
                     <row>main-bottom</row>
+                    <row>main-bottom-b</row>
                 </rows>
                 <field type="select" name="layout" label="Layout">
                     <option value="parallel">Parallel</option>
@@ -123,6 +125,7 @@
                     <row>bottom-b</row>
                     <row>bottom-c</row>
                     <row>bottom-d</row>
+                    <row>main-bottom-b</row>
                 </rows>
                 <field type="select" name="block-bg" label="Background" default="">
                     <option value="">Default Background</option>

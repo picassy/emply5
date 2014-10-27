@@ -28,6 +28,9 @@
 		"main-bottom": {
 			"panel": "uk-panel uk-panel-box"
 		},
+		"main-bottom-b": {
+			"panel": "uk-panel uk-panel-box"
+		},
 		"sidebar-a": {
 			"panel": "uk-panel uk-panel-box"
 		},
@@ -86,6 +89,10 @@
 					"responsive": "medium"
 				},
 				"main-bottom": {
+					"layout": "parallel",
+					"responsive": "medium"
+				},
+				"main-bottom-b": {
 					"layout": "parallel",
 					"responsive": "medium"
 				}
@@ -173,6 +180,10 @@
 					"responsive": "medium"
 				},
 				"main-bottom": {
+					"layout": "parallel",
+					"responsive": "medium"
+				},
+				"main-bottom-b": {
 					"layout": "parallel",
 					"responsive": "medium"
 				}

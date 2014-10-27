@@ -101,13 +101,13 @@ include($this['path']->path('layouts:theme.config.php'));
         </div>
         <?php endif; ?>
 
-        <?php if ($this['widgets']->count('main-top + main-bottom + sidebar-a + sidebar-b') || $this['config']->get('system_output', true)) : ?>
+        <?php if ($this['widgets']->count('main-top + main-bottom + main-bottom-b + sidebar-a + sidebar-b') || $this['config']->get('system_output', true)) : ?>
         <div class="tm-block-top-main<?php echo $block_classes['main']; ?>">
             <div class="uk-container uk-container-center">
 
                 <div class="tm-middle uk-grid" data-uk-grid-match data-uk-grid-margin>
 
-                    <?php if ($this['widgets']->count('main-top + main-bottom') || $this['config']->get('system_output', true)) : ?>
+                    <?php if ($this['widgets']->count('main-top + main-bottom + main-bottom-b') || $this['config']->get('system_output', true)) : ?>
                     <div class="<?php echo $columns['main']['class'] ?>">
 
                         <?php if ($this['widgets']->count('main-top')) : ?>
@@ -128,6 +128,10 @@ include($this['path']->path('layouts:theme.config.php'));
 
                         <?php if ($this['widgets']->count('main-bottom')) : ?>
                         <section class="<?php echo $grid_classes['main-bottom']; echo $display_classes['main-bottom']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><?php echo $this['widgets']->render('main-bottom', array('layout'=>$this['config']->get('grid.main-bottom.layout'))); ?></section>
+                        <?php endif; ?>
+
+                        <?php if ($this['widgets']->count('main-bottom-b')) : ?>
+                        <section class="<?php echo $grid_classes['main-bottom-b']; echo $display_classes['main-bottom-b']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><?php echo $this['widgets']->render('main-bottom-b', array('layout'=>$this['config']->get('grid.main-bottom-b.layout'))); ?></section>
                         <?php endif; ?>
 
                     </div>
