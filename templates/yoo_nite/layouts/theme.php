@@ -101,6 +101,14 @@ include($this['path']->path('layouts:theme.config.php'));
         </div>
         <?php endif; ?>
 
+        <?php if ($this['widgets']->count('top-d')) : ?>
+        <div class="tm-block-top-d<?php echo $block_classes['top-d']; echo $display_classes['top-d']; ?>">
+            <div class="uk-container uk-container-center">
+                <section class="<?php echo $grid_classes['top-d']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><?php echo $this['widgets']->render('top-d', array('layout'=>$this['config']->get('grid.top-d.layout'))); ?></section>
+            </div>
+        </div>
+        <?php endif; ?>
+
         <?php if ($this['widgets']->count('main-top + main-bottom + main-bottom-b + sidebar-a + sidebar-b') || $this['config']->get('system_output', true)) : ?>
         <div class="tm-block-top-main<?php echo $block_classes['main']; ?>">
             <div class="uk-container uk-container-center">
