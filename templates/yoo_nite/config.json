@@ -44,7 +44,7 @@
 	"tracking_code": "",
 	"layouts": {
 		"default": {
-			"style": "graphite",
+			"style": "salmon",
 			"sidebars": {
 				"sidebar-a": {
 					"width": "15",
@@ -149,7 +149,7 @@
 			}
 		},
 		"frontpage": {
-			"style": "graphite",
+			"style": "salmon",
 			"system_output": "0",
 			"sidebars": {
 				"sidebar-a": {
@@ -810,7 +810,7 @@
 		"111": {
 			"class": "",
 			"panel": "",
-			"icon": "",
+			"icon": "uk-icon-github-alt",
 			"badge": {
 				"type": "uk-panel-badge uk-badge",
 				"text": ""
